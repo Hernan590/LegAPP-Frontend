@@ -1,0 +1,43 @@
+.Titulo1{
+    color: #fff;
+  }
+
+.Contenedor-proveedor{
+    background: #1c4e98;
+    width: auto;
+    display: flex;                 
+    justify-content: space-evenly;
+  }
+
+.Contenedorp1{
+    background: #1c4e98;
+    display: list-item;             
+}
+
+
+  .botonvolver {
+    cursor: pointer;
+    width: 120px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: #fff;
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  .Contenedor-boton-regresar {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .botonprovee{
+    background: #1c4e98;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
