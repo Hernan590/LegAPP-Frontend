@@ -28,10 +28,10 @@ const Header = () => {
                 <div className="Contenedor1"><h3 className="Titulo1">Gestion de usuario</h3>
                 <button className="boton1"><img src={usuario}/></button>
                 </div>
-                <div className="Contenedor1"><h3 className="Titulo1">Crear proveedor</h3>
+                <div className="Contenedor1"><h3 className="Titulo1">Gestion de proveedor</h3>
                 <button className="boton1" onClick={handleClick1}><img src={proveedor}/></button>
                 </div>
-                <div className="Contenedor1"><h3 className="Titulo1">Crear tipo de gasto</h3>
+                <div className="Contenedor1"><h3 className="Titulo1">Gestion de gasto</h3>
                 <button className="boton1"><img src={gasto}/></button>
                 </div>
             </div>
