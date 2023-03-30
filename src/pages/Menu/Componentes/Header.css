@@ -1,0 +1,66 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0033ff;
+    color: #fff;
+    padding: 1px;
+  }
+
+  .Titulo{
+    padding-left: 11px;
+  }
+
+  .Titulo1{
+    color: #fff;
+
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    margin-right: 3rem;
+  }
+  
+  nav li:last-child {
+    margin-right: 0;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+.boton{
+    cursor: pointer;
+    width: 120px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    margin-right: 1rem;
+}
+.Contenedor{
+  margin: 2px 0 0 0;
+	border-radius: 10px;
+	background: #1364DD;
+	width: auto;
+	display: flex;                 
+	justify-content: space-evenly;
+}
+
+.boton1{
+  background: #1364DD;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
