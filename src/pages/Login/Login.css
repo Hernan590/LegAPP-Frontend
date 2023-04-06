@@ -3,14 +3,26 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 400px; 
+    height: auto;
+    margin: 10px auto;
+    border-radius: 10px;  
+    padding-top: 10px;
+    padding-bottom: 40px;  
+    background-color: #1c4e98; 
+}
+
+.usuario-logo{
+    height: 200px;
 }
 
 .logousuario-contenedor{
     width: 100%;
-    height: 250px;
+    height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 20px;
 }
 
 .submit-boton{
@@ -42,9 +54,17 @@
     border: black;
     padding: 0 10px 0 20px;
     box-sizing: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 5px;
     font-size: 14px;
     outline: none;
+}
+
+.input1{
+    margin-bottom: 20px;
+}
+
+.input2{
+    margin-top: 20px;
 }
 
 .regular-style::placeholder{

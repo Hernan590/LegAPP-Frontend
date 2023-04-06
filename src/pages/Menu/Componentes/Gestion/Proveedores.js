@@ -9,11 +9,20 @@ import { useHistory } from 'react-router-dom';
 const Proveedor = () => {
     const history = useHistory();
     const handleClick = () => history.push("/menu");
+    const handleClick1 = () => history.push("/crearproveedor");
+
     return (
         <>
+        <header className="header1">
+            <h1 className="Titulo-inicial" >Bienvenido a gestion de proveedor</h1>
+        </header>
+        <div className="contenedor-texto">
+            <p className="texto1">¿Que deseas hacer?</p>
+            <p className="texto1">Por favor dar clic en un icono para realizar una accion</p>
+        </div>
           <div className="Contenedor-proveedor">
                 <div className="Contenedorp1"><h3 className="Titulo1">Crear Proveedor</h3>
-                <button className="botonprovee"><img src={Crearproveedor}/></button>
+                <button className="botonprovee" onClick={handleClick1}><img src={Crearproveedor}/></button>
                 </div>
                 <div className="Contenedorp1"><h3 className="Titulo1">Listar Proveedor</h3>
                 <button className="botonprovee"><img src={Listar}/></button>

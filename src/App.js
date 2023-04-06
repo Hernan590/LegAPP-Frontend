@@ -3,7 +3,9 @@ import {BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Login from './pages/Login/Login';
 import Menu from './pages/Menu/Menu';
 import Proveedor from './pages/Menu/Componentes/Gestion/Proveedores';
-
+import Usuario from './pages/Menu/Componentes/Gestion/Usuario';
+import Gasto from './pages/Menu/Componentes/Gestion/Gastos';
+import Formcrearprovee from './pages/Menu/Componentes/Formularios/Crearprovee';
 
 function App() {
   return (
@@ -12,6 +14,9 @@ function App() {
           <Route exact path="/" component={Login}/>
           <Route path="/menu" component={Menu}/>
           <Route path="/proveedor" component={Proveedor}/>
+          <Route path="/usuario" component={Usuario}/>
+          <Route path="/gasto" component={Gasto}/>
+          <Route path="/crearproveedor" component={Formcrearprovee}/>
         </Switch>
       </Router>
   );

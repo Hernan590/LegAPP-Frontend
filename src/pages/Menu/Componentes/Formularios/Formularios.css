@@ -1,0 +1,75 @@
+.formulario-contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px; 
+    height: auto;
+    margin: 40px auto;
+    border-radius: 10px;  
+    padding-top: 10px;
+    padding-bottom: 40px;  
+    background-color: #1c4e98; 
+}
+
+.texto{
+    margin: auto;
+    color: #fff;
+}
+
+.Titulo1{
+    color: #fff;
+}
+
+.contenedor-enviar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    height: 35px;
+}
+
+.submit-boton{
+    margin-top: 40px;
+    cursor: pointer;
+    width: 100px;
+    height: 35px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    background: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.submit-boton1{
+    margin-top: 40px;
+    cursor: pointer;
+    width: 100px;
+    height: 35px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    background: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.inputs-contenedor {
+    width: auto;
+    
+}
+
+.regular-style {
+    width: 255px;
+    height: 35px;
+    border-radius: 25px;
+    border: black;
+    padding: 0 10px 0 20px;
+    box-sizing: 10px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    outline: none;
+}

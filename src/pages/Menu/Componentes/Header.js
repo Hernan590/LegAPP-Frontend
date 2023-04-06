@@ -12,6 +12,8 @@ const Header = () => {
     const history = useHistory();
     const handleClick = () => history.push("/");
     const handleClick1 = () => history.push("/proveedor");
+    const handleClick2 = () => history.push("/usuario");
+    const handleClick3 = () => history.push("/gasto");
     return(
 
         <>
@@ -24,15 +26,19 @@ const Header = () => {
                 </ul>
             </nav>
         </header>
+            <div className="Contenedor-texto1">
+                <p className="texto1">Le damos la bienvenida a <strong>legAPP</strong> querido usuario.</p>
+                <p className="texto1">Por favor, seleccionar y dar clic con el raton la funcionalidad que quieran realizar.</p>
+            </div>
             <div className="Contenedor">
                 <div className="Contenedor1"><h3 className="Titulo1">Gestion de usuario</h3>
-                <button className="boton1"><img src={usuario}/></button>
+                <button className="boton1" onClick={handleClick2}><img src={usuario} className="tamaño_imagen1"/></button>
                 </div>
                 <div className="Contenedor1"><h3 className="Titulo1">Gestion de proveedor</h3>
-                <button className="boton1" onClick={handleClick1}><img src={proveedor}/></button>
+                <button className="boton1" onClick={handleClick1}><img src={proveedor} className="tamaño_imagen1"/></button>
                 </div>
                 <div className="Contenedor1"><h3 className="Titulo1">Gestion de gasto</h3>
-                <button className="boton1"><img src={gasto}/></button>
+                <button className="boton1" onClick={handleClick3}><img src={gasto} className="tamaño_imagen1"/></button>
                 </div>
             </div>
         </>

@@ -7,13 +7,33 @@ import Labelbienvenida from "./Componentes/Label/Labelbienvenida";
 import Label from "./Componentes/Label/Label";
 import Label1 from "./Componentes/Label/Label1";
 import { useHistory } from 'react-router-dom';
-
+import axios from "axios";
 
 export default function Login (){
     const [ Usuario, setUsuario ] = useState("");
     const [ password, setPassword ] = useState("");
     const history = useHistory();
-    //const handleClick = () => history.push("/menu");
+    const handleClick = () => history.push("/menu");
+
+    const handleLogin = (e) => {
+        e.preventDefault();
+        axios.post('http://localhost:4500/getUser', {
+          email: Usuario,
+          password: password
+        })
+        .then(response => {
+          //console.log(response.data);
+          if(response.data["message"]=="user legalizador found"){
+            handleClick();
+          }
+          // manejar la respuesta exitosa aquí
+        })
+        .catch(error => {
+          console.log(error);
+          // manejar el error aquí
+        });
+      };
+
 
     return(
         <div className="login-container">
@@ -26,8 +46,8 @@ export default function Login (){
             <Title text="Iniciar Sesion"/>
             <Labelbienvenida text={<p> Bienvenido a <strong>legAPP</strong></p>}/>
             <div className="inputs-container">
-            <form action="http://localhost:4500/getUser" method="POST">
-                <div>
+            <form onSubmit={handleLogin}>
+                <div className="input1">
                     <Label1 text="Email"/>
                     <input
                     id="Usuario"
@@ -38,7 +58,7 @@ export default function Login (){
                     onChange={(e) => setUsuario(e.target.value)}
                     className="regular-style"/>
                 </div>
-                <div>
+                <div className="input2">
                     <Label text="Contraseña"/>
                     <input
                     id="Password"
@@ -50,7 +70,7 @@ export default function Login (){
                     className="regular-style"/>
                 </div>
                     <div className="contenedor-boton"> 
-                    <button //onClick={handleClick}
+                    <button
                         type="submit"
                         className="submit-boton">Iniciar</button>
                     </div>

@@ -7,11 +7,13 @@
     width: auto;
     display: flex;                 
     justify-content: space-evenly;
+    padding-bottom: 50px;
   }
 
 .Contenedorp1{
     background: #1c4e98;
-    display: list-item;             
+    display: column; 
+    align-items: center;            
 }
 
 
@@ -25,14 +27,18 @@
     background: #fff;
     font-size: 15px;
     font-weight: bold;
+    
   }
 
   .Contenedor-boton-regresar {
-    margin-top: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: #1c4e98;
+    height: auto;
+    padding-bottom: 148px;
+   
   }
 
   .botonprovee{
@@ -40,4 +46,34 @@
     border: none;
     outline: none;
     cursor: pointer;
+  }
+
+  .header1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0033ff;
+    color: #fff;
+    padding: 1px;
+  }
+
+  .Titulo-inicial{
+    padding-left: 11px;
+  }
+
+  .texto1{
+    color: #fff;
+    padding-left: 11px;
+  }
+
+  .contenedor-texto{
+    background: #1c4e98;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tamaño_imagen{
+    height: 120px;
   }
