@@ -23,7 +23,7 @@ export default function Login (){
         })
         .then(response => {
           //console.log(response.data);
-          if(response.data["message"]=="user legalizador found"){
+          if(response.data["message"]=="user Administrador found"){
             handleClick();
           }
           // manejar la respuesta exitosa aquí

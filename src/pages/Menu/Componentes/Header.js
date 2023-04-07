@@ -5,6 +5,7 @@ import pregunta from "./imagenes/image.png";
 import gasto from "./imagenes/tipogasto.png";
 import proveedor from "./imagenes/Proveedor.png";
 import usuario from "./imagenes/Usuario.png";
+import logoapp from "./imagenes/logo.png";
 
 
 
@@ -18,7 +19,10 @@ const Header = () => {
 
         <>
         <header className="header">
-            <h1 className="Titulo" >Bienvenido a legAPP</h1>
+           
+            <h1 className="Titulo" >
+            <img src={logoapp} className="logo"
+            />Bienvenido a legAPP</h1>
             <nav>
                 <ul> 
                     <li><img src={pregunta} className="pregunta"/></li>   

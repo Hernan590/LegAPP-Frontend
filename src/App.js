@@ -6,6 +6,7 @@ import Proveedor from './pages/Menu/Componentes/Gestion/Proveedores';
 import Usuario from './pages/Menu/Componentes/Gestion/Usuario';
 import Gasto from './pages/Menu/Componentes/Gestion/Gastos';
 import Formcrearprovee from './pages/Menu/Componentes/Formularios/Crearprovee';
+import Formcrearusuario from './pages/Menu/Componentes/Formularios/Crearusuario';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/usuario" component={Usuario}/>
           <Route path="/gasto" component={Gasto}/>
           <Route path="/crearproveedor" component={Formcrearprovee}/>
+          <Route path="/crearusuario" component={Formcrearusuario}/>
         </Switch>
       </Router>
   );

@@ -9,6 +9,7 @@ import Inact from "../imagenes/eliminarusuario.png";
 const Usuario = () => {
     const history = useHistory();
     const handleClick = () => history.push("/menu");
+    const handleClick1 = () => history.push("/crearusuario");
     return (
         <>
         <header className="header1">
@@ -20,7 +21,7 @@ const Usuario = () => {
         </div>
           <div className="Contenedor-proveedor">
                 <div className="Contenedorp1"><h3 className="Titulo1">Crear Usuario</h3>
-                <button className="botonprovee"><img src={Crear} className="tamaño_imagen"/></button>
+                <button className="botonprovee" onClick={handleClick1} ><img src={Crear} className="tamaño_imagen"/></button>
                 </div>
                 <div className="Contenedorp1"><h3 className="Titulo1">Listar Usuario</h3>
                 <button className="botonprovee"><img src={listarusuario} className="tamaño_imagen"/></button>

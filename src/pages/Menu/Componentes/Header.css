@@ -5,10 +5,20 @@
     background-color: #0033ff;
     color: #fff;
     padding: 1px;
+    height: 80px;
   }
 
+  .logo{
+    padding-top: 15px;
+    height: 85px;
+    padding-right: 10px;
+  }
+
+
   .Titulo{
-    padding-left: 11px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .Titulo1{
@@ -54,7 +64,7 @@
 	width: auto;
 	display: flex;                 
 	justify-content: space-evenly;
-  padding-bottom: 148px;
+  padding-bottom: 154px;
 }
 
 .boton1{
