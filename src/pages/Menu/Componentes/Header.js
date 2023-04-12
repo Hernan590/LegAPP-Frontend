@@ -8,7 +8,6 @@ import usuario from "./imagenes/Usuario.png";
 import logoapp from "./imagenes/logo.png";
 
 
-
 const Header = () => {
     const history = useHistory();
     const handleClick = () => history.push("/");
@@ -19,7 +18,6 @@ const Header = () => {
 
         <>
         <header className="header">
-           
             <h1 className="Titulo" >
             <img src={logoapp} className="logo"
             />Bienvenido a legAPP</h1>
@@ -31,8 +29,6 @@ const Header = () => {
             </nav>
         </header>
             <div className="Contenedor-texto1">
-                <p className="texto1">Le damos la bienvenida a <strong>legAPP</strong> querido usuario.</p>
-                <p className="texto1">Por favor, seleccionar y dar clic con el raton la funcionalidad que quieran realizar.</p>
             </div>
             <div className="Contenedor">
                 <div className="Contenedor1"><h3 className="Titulo1">Gestion de usuario</h3>

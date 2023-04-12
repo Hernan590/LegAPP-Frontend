@@ -14,6 +14,7 @@ export default function Login (){
     const [ password, setPassword ] = useState("");
     const history = useHistory();
     const handleClick = () => history.push("/menu");
+    const handleClick1 = () => history.push("/usuarionoexiste");
 
     const handleLogin = (e) => {
         e.preventDefault();
@@ -30,7 +31,7 @@ export default function Login (){
         })
         .catch(error => {
           console.log(error);
-          // manejar el error aquí
+         // manejar el error aquí
         });
       };
 
@@ -72,7 +73,7 @@ export default function Login (){
                     <div className="contenedor-boton"> 
                     <button
                         type="submit"
-                        className="submit-boton">Iniciar</button>
+                        className="boton-iniciar">Iniciar</button>
                     </div>
                 </form>
             </div>

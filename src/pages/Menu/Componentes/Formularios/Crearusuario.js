@@ -8,12 +8,17 @@ import axios from "axios";
 const Formcrearusuario = () => {
     const history = useHistory();
     const handleRegresar = () => history.push("/usuario");
-    const handleClick = () => alert("El usuario ha sido creado con exito");
+    const handlealerta = () => alert("El usuario ha sido creado con exito");
     const [ idrol, setidrol ] = useState("");
     const [ nombre, setnombre ] = useState("");
     const [ email, setemail ] = useState("");
     const [ password, setpassword ] = useState("");
 
+    const handleSelect = (e) =>{
+        const option = e.target.value;
+        console.log(option);
+        setidrol(option);
+     }
 
     const handlecrearusuario = (e) => {
         e.preventDefault();
@@ -26,7 +31,10 @@ const Formcrearusuario = () => {
         .then(response => {
           //console.log(response.data);
           if(response.data["message"]=="Usuario creado"){
-            handleClick();
+            handlealerta();
+            setnombre("");
+            setemail("");
+            setpassword("");
           }
           // manejar la respuesta exitosa aquí
         })
@@ -46,15 +54,11 @@ const Formcrearusuario = () => {
             <form onSubmit={handlecrearusuario}>
                 <div>
                     <h4 className="Titulo1">id-Rol</h4>
-                    <p className="textoad">Por favor, solo digitar 1 si es legilizador, o 2 para administrador</p>
-                    <input
-                    id="idrol"
-                    name="idrol"
-                    placeholder="Escribir el rol"
-                    type="text"
-                    value={idrol}
-                    onChange={(e) => setidrol(e.target.value)}
-                    className="regular-style"/>
+                    <select name="idrol" id="idrol" onClick={handleSelect} className="regular-style1">
+                        <option>Seleccione una opcion</option>
+                        <option value="1">Legalizador</option>
+                        <option value="2">Administrador</option>
+                    </select>
                 </div>
                 <div>
                     <h4 className="Titulo1">Nombre</h4>
@@ -92,7 +96,7 @@ const Formcrearusuario = () => {
                     <div className="contenedor-enviar"> 
                     <button
                         type="submit"
-                        className="submit-boton" onClick={handleRegresar}>Regresar</button>
+                        className="submit-boton" onClick={handleRegresar}>Cancelar</button>
                     <button
                         type="submit"
                         className="submit-boton1">Enviar</button>

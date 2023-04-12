@@ -7,6 +7,10 @@ import Usuario from './pages/Menu/Componentes/Gestion/Usuario';
 import Gasto from './pages/Menu/Componentes/Gestion/Gastos';
 import Formcrearprovee from './pages/Menu/Componentes/Formularios/Crearprovee';
 import Formcrearusuario from './pages/Menu/Componentes/Formularios/Crearusuario';
+import usuarionoexiste from "./pages/Login/Usuarionoexiste";
+import Formactualizarprovee from './pages/Menu/Componentes/Formularios/Actulizarprovee';
+import Formcreartipogasto from './pages/Menu/Componentes/Formularios/Creartipogasto';
+
 
 function App() {
   return (
@@ -19,6 +23,9 @@ function App() {
           <Route path="/gasto" component={Gasto}/>
           <Route path="/crearproveedor" component={Formcrearprovee}/>
           <Route path="/crearusuario" component={Formcrearusuario}/>
+          <Route path="/usuarionoexiste" component={usuarionoexiste}/>
+          <Route path="/actualizarproveedor" component={Formactualizarprovee}/>
+          <Route path="/creartipogasto" component={Formcreartipogasto}/>
         </Switch>
       </Router>
   );

@@ -25,15 +25,17 @@
     margin-bottom: 20px;
 }
 
-.submit-boton{
-   width: 200px;
-   height: 40px;
+.boton-iniciar{
+   margin-top: 40px;
+   width: 100px;
+   height: 35px;
    border-radius: 25px;
    border: none;
    outline: none;
    background: #fff;
-   font-size: 20px;
+   font-size: 15px;
    font-weight: bold; 
+   cursor: pointer;
 }
 
 .boton-container{

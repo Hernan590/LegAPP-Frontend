@@ -5,6 +5,7 @@ import Crear from "../imagenes/Crearcuenta.png";
 import listarusuario from "../imagenes/listarcliente.png";
 import Actua from "../imagenes/Actualizarusuario.png";
 import Inact from "../imagenes/eliminarusuario.png";
+import logoapp from "../imagenes/logo.png";
 
 const Usuario = () => {
     const history = useHistory();
@@ -13,11 +14,12 @@ const Usuario = () => {
     return (
         <>
         <header className="header1">
-            <h1 className="Titulo-inicial" >Bienvenido a gestion de usuario</h1>
+        <h1 className="Titulo" >
+            <img src={logoapp} className="logo"
+            />Bienvenido a la gestion de usuario</h1>
         </header>
         <div className="contenedor-texto">
             <p className="texto1">¿Que deseas hacer?</p>
-            <p className="texto1">Por favor dar clic en un icono para realizar una accion.</p>
         </div>
           <div className="Contenedor-proveedor">
                 <div className="Contenedorp1"><h3 className="Titulo1">Crear Usuario</h3>

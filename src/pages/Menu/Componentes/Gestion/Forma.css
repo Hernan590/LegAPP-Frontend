@@ -37,7 +37,7 @@
     align-items: center;
     background: #1c4e98;
     height: auto;
-    padding-bottom: 148px;
+    padding-bottom: 207px;
    
   }
 
@@ -55,6 +55,7 @@
     background-color: #0033ff;
     color: #fff;
     padding: 1px;
+    height: 80px;
   }
 
   .Titulo-inicial{

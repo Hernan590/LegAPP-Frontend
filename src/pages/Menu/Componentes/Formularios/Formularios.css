@@ -43,7 +43,7 @@
     border-radius: 25px;
     border: none;
     outline: none;
-    background: #fff;
+    background: #f07979;
     font-size: 15px;
     font-weight: bold;
     margin-right: 20px;
@@ -66,6 +66,19 @@
 .inputs-contenedor {
     width: auto;
     
+}
+
+
+.regular-style1{
+    width: 285px;
+    height: 35px;
+    border-radius: 25px;
+    border: black;
+    padding: 0 10px 0 20px;
+    box-sizing: 10px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    outline: none;
 }
 
 .regular-style {
