@@ -12,6 +12,7 @@ const Proveedor = () => {
     const handleClick = () => history.push("/menu");
     const handleClick1 = () => history.push("/crearproveedor");
     const handleClick3 = () => history.push("/actualizarproveedor");
+    const handleClick4 = () => history.push("/listarproveedor");
 
     return (
         <>
@@ -28,7 +29,7 @@ const Proveedor = () => {
                 <button className="botonprovee" onClick={handleClick1}><img src={Crearproveedor}/></button>
                 </div>
                 <div className="Contenedorp1"><h3 className="Titulo1">Listar Proveedor</h3>
-                <button className="botonprovee"><img src={Listar}/></button>
+                <button className="botonprovee" onClick={handleClick4}><img src={Listar}/></button>
                 </div>
                 <div className="Contenedorp1"><h3 className="Titulo1">Actualizar Proveedor</h3>
                 <button className="botonprovee" onClick={handleClick3}><img src={Actua}/></button>

@@ -57,7 +57,7 @@ export default function Login (){
                     type="email"
                     value={Usuario}
                     onChange={(e) => setUsuario(e.target.value)}
-                    className="regular-style"/>
+                    className="regular-style1"/>
                 </div>
                 <div className="input2">
                     <Label text="Contraseña"/>
@@ -68,7 +68,7 @@ export default function Login (){
                     type="password"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
-                    className="regular-style"/>
+                    className="regular-style1"/>
                 </div>
                     <div className="contenedor-boton"> 
                     <button

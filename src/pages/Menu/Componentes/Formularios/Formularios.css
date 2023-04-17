@@ -17,8 +17,13 @@
     color: #fff;
 }
 
+.Titulo-contenedor{
+    color: #fff;
+    margin-bottom: 10px;
+}
+
 .textoad{
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     color: #fff;
     font-size: 10px;
 }
@@ -68,8 +73,7 @@
     
 }
 
-
-.regular-style1{
+.style-selector{
     width: 285px;
     height: 35px;
     border-radius: 25px;

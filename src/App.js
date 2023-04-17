@@ -10,7 +10,9 @@ import Formcrearusuario from './pages/Menu/Componentes/Formularios/Crearusuario'
 import usuarionoexiste from "./pages/Login/Usuarionoexiste";
 import Formactualizarprovee from './pages/Menu/Componentes/Formularios/Actulizarprovee';
 import Formcreartipogasto from './pages/Menu/Componentes/Formularios/Creartipogasto';
-
+import Formactualizarusuario from './pages/Menu/Componentes/Formularios/ActualizarUsuario';
+import Listarusuario from './pages/Menu/Componentes/Formularios/ListarUsuario';
+import Listarproveedor from './pages/Menu/Componentes/Formularios/ListarProveedor';
 
 function App() {
   return (
@@ -26,6 +28,9 @@ function App() {
           <Route path="/usuarionoexiste" component={usuarionoexiste}/>
           <Route path="/actualizarproveedor" component={Formactualizarprovee}/>
           <Route path="/creartipogasto" component={Formcreartipogasto}/>
+          <Route path="/actualizarusuario" component={Formactualizarusuario}/>
+          <Route path="/listarusuario" component={Listarusuario}/>
+          <Route path="/listarproveedor" component={Listarproveedor}/>
         </Switch>
       </Router>
   );

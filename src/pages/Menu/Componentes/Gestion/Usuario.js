@@ -11,6 +11,8 @@ const Usuario = () => {
     const history = useHistory();
     const handleClick = () => history.push("/menu");
     const handleClick1 = () => history.push("/crearusuario");
+    const handleClick2 = () => history.push("/actualizarusuario");
+    const handleClick3 = () => history.push("/listarusuario");
     return (
         <>
         <header className="header1">
@@ -26,10 +28,10 @@ const Usuario = () => {
                 <button className="botonprovee" onClick={handleClick1} ><img src={Crear} className="tamaño_imagen"/></button>
                 </div>
                 <div className="Contenedorp1"><h3 className="Titulo1">Listar Usuario</h3>
-                <button className="botonprovee"><img src={listarusuario} className="tamaño_imagen"/></button>
+                <button className="botonprovee" onClick={handleClick3} ><img src={listarusuario} className="tamaño_imagen"/></button>
                 </div>
                 <div className="Contenedorp1"><h3 className="Titulo1">Actualizar Usuario</h3>
-                <button className="botonprovee"><img src={Actua} className="tamaño_imagen"/></button>
+                <button className="botonprovee" onClick={handleClick2} ><img src={Actua} className="tamaño_imagen"/></button>
                 </div>
                 <div className="Contenedorp1"><h3 className="Titulo1">Inactivar Usuario</h3>
                 <button className="botonprovee"><img src={Inact} className="tamaño_imagen"/></button>
