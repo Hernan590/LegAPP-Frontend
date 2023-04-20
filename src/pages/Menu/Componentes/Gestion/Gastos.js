@@ -11,6 +11,7 @@ const Gasto = () => {
     const history = useHistory();
     const handleClick = () => history.push("/menu");
     const handleClick1 = () => history.push("/creartipogasto");
+    const handleClick2 = () => history.push("/listargastos");
     return (
         <>
         <header className="header1">
@@ -26,7 +27,7 @@ const Gasto = () => {
                 <button className="botonprovee" onClick={handleClick1}><img src={gastos} className="tamaño_imagen"/></button>
                 </div>
                 <div className="Contenedorp1"><h3 className="Titulo1">Listar Gasto</h3>
-                <button className="botonprovee"><img src={listargasto} className="tamaño_imagen"/></button>
+                <button className="botonprovee" onClick={handleClick2}><img src={listargasto} className="tamaño_imagen"/></button>
                 </div>
                 <div className="Contenedorp1"><h3 className="Titulo1">Actualizar Gasto</h3>
                 <button className="botonprovee"><img src={actualizargasto} className="tamaño_imagen"/></button>

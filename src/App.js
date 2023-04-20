@@ -13,6 +13,7 @@ import Formcreartipogasto from './pages/Menu/Componentes/Formularios/Creartipoga
 import Formactualizarusuario from './pages/Menu/Componentes/Formularios/ActualizarUsuario';
 import Listarusuario from './pages/Menu/Componentes/Formularios/ListarUsuario';
 import Listarproveedor from './pages/Menu/Componentes/Formularios/ListarProveedor';
+import Listartipodegastos from './pages/Menu/Componentes/Formularios/Listartipodegastos';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
           <Route path="/actualizarusuario" component={Formactualizarusuario}/>
           <Route path="/listarusuario" component={Listarusuario}/>
           <Route path="/listarproveedor" component={Listarproveedor}/>
+          <Route path="/listargastos" component={Listartipodegastos}/>
         </Switch>
       </Router>
   );
