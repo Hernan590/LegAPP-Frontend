@@ -28,9 +28,9 @@ return (
                         </tr>
                     </thead>
                 <tbody>
-                {datos.map((dato) => (
-                    <tr key={dato.idTipoGasto}>
-                        <td>{dato.nombreGasto}</td>
+                {datos.map((dato, index) => (
+                    <tr key={index}>
+                        <td>{dato.nombreGasto} </td>
                     </tr>
                     ))}
                 </tbody>
