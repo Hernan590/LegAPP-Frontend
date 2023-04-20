@@ -12,7 +12,7 @@ const Listartipodegastos= () => {
     const handleRegresar = () => history.push("/gasto");
 
     useEffect(() => {
-      axios.get("http://localhost:4500/gastos")
+      axios.get("http://localhost:4500/getSpents")
         .then((response) => setDatos(response.data))
         .catch((error) => console.log(error));
     }, []);
