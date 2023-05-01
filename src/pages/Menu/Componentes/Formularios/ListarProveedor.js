@@ -13,7 +13,14 @@ const Listarproveedor= () => {
 
     useEffect(() => {
       axios.get("http://localhost:4500/proveedores")
-        .then((response) => setDatos(response.data))
+      .then((response) => {
+        let result = response.data.filter((element)=>{
+            if(element.estado==1){
+                return element;
+            } 
+        })
+        setDatos(result);
+    })
         .catch((error) => console.log(error));
     }, []);
 

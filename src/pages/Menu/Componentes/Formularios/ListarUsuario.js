@@ -13,7 +13,14 @@ const Listarusuario= () => {
 
     useEffect(() => {
       axios.get("http://localhost:4500/usuarios")
-        .then((response) => setDatos(response.data))
+        .then((response) => {
+            let result = response.data.filter((element)=>{
+                if(element.estado==1){
+                    return element;
+                } 
+            })
+            setDatos(result);
+        })
         .catch((error) => console.log(error));
     }, []);
 

@@ -6,7 +6,7 @@ import gasto from "./imagenes/tipogasto.png";
 import proveedor from "./imagenes/Proveedor.png";
 import usuario from "./imagenes/Usuario.png";
 import logoapp from "./imagenes/logo.png";
-
+import reporte from "./imagenes/reportegasto.png";
 
 const Header = () => {
     const history = useHistory();
@@ -15,7 +15,6 @@ const Header = () => {
     const handleClick2 = () => history.push("/usuario");
     const handleClick3 = () => history.push("/gasto");
     return(
-
         <>
         <header className="header">
             <h1 className="Titulo" >
@@ -39,6 +38,10 @@ const Header = () => {
                 </div>
                 <div className="Contenedor1"><h3 className="Titulo1">Gestion de gasto</h3>
                 <button className="boton1" onClick={handleClick3}><img src={gasto} className="tamaño_imagen1"/></button>
+                </div>
+                <div>
+                <h3 className="Titulo1">Reporte de gastos</h3>
+                <a href="https://lookerstudio.google.com/u/0/reporting/8986615c-e77f-4b99-a380-cadd2964f1a6/page/aSzND?s=rEEf8Sj_86U"><img src={reporte} className="tamaño_imagen1"/></a>
                 </div>
             </div>
         </>

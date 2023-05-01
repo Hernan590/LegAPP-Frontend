@@ -24,11 +24,23 @@ const Formactualizarusuario = () => {
 
      const handleactualizarusuario = (e) => {
         e.preventDefault();
+        const objData = {
+            nombre: nombre,
+            idRol: idrol,
+            email: email,
+            password: password
+        }
+        
+        for(let element of Object.keys(objData)){
+            if(objData[element] === ""){
+                delete objData[element];
+            }
+        }
         axios.patch(`http://localhost:4500/updateUser/${emailanterior}`, {
-          idRol: idrol,
-          nombre: nombre,
-          email: email,
-          password: password
+            idRol: objData["idRol"],
+            nombre: objData["nombre"],
+            email: objData["email"],
+            password: objData["password"]
         })
         .then(response => {
           //console.log(response.data);

@@ -17,12 +17,25 @@ const Formactualizarprovee = () => {
 
     const handleactualizarproveedor = (e) => {
         e.preventDefault();
+        const objData = {
+            nit: nit,
+            nombreProveedor: nproveedor,
+            telefonoProveedor: tproveedor,
+            direccion: direccion,
+            nombreContactoProveedor: ncontactop
+        }
+        
+        for(let element of Object.keys(objData)){
+            if(objData[element] === ""){
+                delete objData[element];
+            }
+        }
         axios.patch('http://localhost:4500/updateProvider', {
-          nit: nit,
-          nombreProveedor: nproveedor,
-          telefonoProveedor: tproveedor,
-          direccion: direccion,
-          nombreContactoProveedor: ncontactop
+            nit: objData["nit"],
+            nombreProveedor: objData["nombreProveedor"],
+            telefonoProveedor: objData["telefonoProveedor"],
+            direccion: objData["direccion"],
+            nombreContactoProveedor: objData["nombreContactoProveedor"]
         })
         .then(response => {
           //console.log(response.data);

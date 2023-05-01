@@ -13,7 +13,14 @@ const Listartipodegastos= () => {
 
     useEffect(() => {
       axios.get("http://localhost:4500/getSpents")
-        .then((response) => setDatos(response.data))
+      .then((response) => {
+        let result = response.data.filter((element)=>{
+            if(element.estado==1){
+                return element;
+            } 
+        })
+        setDatos(result);
+    })
         .catch((error) => console.log(error));
     }, []);
 
@@ -24,12 +31,14 @@ return (
                 <table>
                     <thead>
                         <tr>
+                        <th>Id del gasto</th>
                         <th>Nombre del gasto</th>
                         </tr>
                     </thead>
                 <tbody>
                 {datos.map((dato, index) => (
                     <tr key={index}>
+                        <td>{dato.idTipoGasto} </td>
                         <td>{dato.nombreGasto} </td>
                     </tr>
                     ))}

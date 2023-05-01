@@ -14,6 +14,11 @@ import Formactualizarusuario from './pages/Menu/Componentes/Formularios/Actualiz
 import Listarusuario from './pages/Menu/Componentes/Formularios/ListarUsuario';
 import Listarproveedor from './pages/Menu/Componentes/Formularios/ListarProveedor';
 import Listartipodegastos from './pages/Menu/Componentes/Formularios/Listartipodegastos';
+import Formactualizartipogasto from './pages/Menu/Componentes/Formularios/Actualizartipogasto';
+import Forminactivargasto from './pages/Menu/Componentes/Formularios/Inactivargasto';
+import Forminactivarusuario from './pages/Menu/Componentes/Formularios/InactivarUsuario';
+import Forminactivarproveedor from './pages/Menu/Componentes/Formularios/InactivarProveedor';
+
 
 function App() {
   return (
@@ -33,6 +38,10 @@ function App() {
           <Route path="/listarusuario" component={Listarusuario}/>
           <Route path="/listarproveedor" component={Listarproveedor}/>
           <Route path="/listargastos" component={Listartipodegastos}/>
+          <Route path="/actualizartipogasto" component={Formactualizartipogasto}/>
+          <Route path="/inactivartipogasto" component={Forminactivargasto}/>
+          <Route path="/inactivarusuario" component={Forminactivarusuario}/>
+          <Route path="/inactivarproveedor" component={Forminactivarproveedor}/>
         </Switch>
       </Router>
   );

@@ -13,6 +13,7 @@ const Usuario = () => {
     const handleClick1 = () => history.push("/crearusuario");
     const handleClick2 = () => history.push("/actualizarusuario");
     const handleClick3 = () => history.push("/listarusuario");
+    const handleClick4 = () => history.push("/inactivarusuario");
     return (
         <>
         <header className="header1">
@@ -33,8 +34,8 @@ const Usuario = () => {
                 <div className="Contenedorp1"><h3 className="Titulo1">Actualizar Usuario</h3>
                 <button className="botonprovee" onClick={handleClick2} ><img src={Actua} className="tamaño_imagen"/></button>
                 </div>
-                <div className="Contenedorp1"><h3 className="Titulo1">Inactivar Usuario</h3>
-                <button className="botonprovee"><img src={Inact} className="tamaño_imagen"/></button>
+                <div className="Contenedorp1"><h3 className="Titulo1">Inactivar o Activar Usuario</h3>
+                <button className="botonprovee" onClick={handleClick4}><img src={Inact} className="tamaño_imagen"/></button>
                 </div>
             </div>
             <div className="Contenedor-boton-regresar">
