@@ -16,6 +16,7 @@ const Formactualizartipogasto = () => {
         e.preventDefault();
         const objData = {
             nombreGasto: nombreGasto
+
         }
         
         for(let element of Object.keys(objData)){
@@ -25,6 +26,7 @@ const Formactualizartipogasto = () => {
         }
         axios.patch(`http://localhost:4500/updateSpent`, {
             nombreGasto: objData["nombreGasto"],
+            id:id
         })
         .then(response => {
           //console.log(response.data);
